@@ -5,7 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <form>
+      <label for="location">City: </label>
+      <input
+        type="text"
+        name="location"
+        id="location"
+        placeholder="Bucharest"
+        required
+      />
+      <label for="units">Units: </label>
+      <select name="units" id="units">
+        <option value="metric">Celsius</option>
+        <option value="us">Fahrenheit</option>
+      </select>
+      <input type="submit" value="Check weather" />
+    </form>
+  </body>
 </html>
