@@ -17,12 +17,13 @@
         placeholder="Bucharest"
         required
       />
-      <label for="units">Units: </label>
-      <select name="units" id="units">
-        <option value="metric">Celsius</option>
-        <option value="us">Fahrenheit</option>
-      </select>
       <input type="submit" value="Check weather" />
     </form>
+    <div class="weather-display" style="display: none">
+      <p class="weather-location"></p>
+      <p class="weather-conditions"></p>
+      <p class="weather-degrees"></p>
+      <button class="toggle-units"></button>
+    </div>
   </body>
 </html>

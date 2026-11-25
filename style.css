@@ -1,0 +1,51 @@
+* {
+  font-family: roboto;
+}
+
+svg {
+  height: 40px;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+
+  input[type="submit"] {
+    margin-top: 5px;
+  }
+}
+
+.weather-display {
+  margin: 50px auto;
+  height: 300px;
+  width: 300px;
+  justify-content: center;
+  text-align: center;
+  grid-template-rows: 1fr 50px 1fr 50px;
+  grid-template-columns: 1fr;
+
+  .weather-location {
+    min-height: 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .weather-conditions {
+    color: #000000b7;
+  }
+
+  .weather-degrees {
+    font-size: 2em;
+    place-self: center;
+  }
+
+  .toggle-units {
+    height: 40px;
+    width: 100px;
+    place-self: center;
+  }
+
+  svg {
+    max-height: 40px;
+  }
+}
